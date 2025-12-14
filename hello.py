@@ -1,13 +1,12 @@
 import sys
 
 def main():
-    try:
+   if (len(sys.argv) != 2): 
+
+        print("Invalid number of arguments.")
+
+   else:
         say_hello(sys.argv[1])
-    except IndexError:
-        print("too few or many arguments.")
-
-
-
 
 
 def say_hello(name):
